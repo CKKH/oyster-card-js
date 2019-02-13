@@ -5,6 +5,6 @@ describe('User buys an Oyster Card and travels around London', () => {
     card.topUp(50)
     card.tapIn("Kings X")
     card.tapOut("Liverpool Street")
-    expect(card.journeys.travelHistory).toContain(["Kings X", "Liverpool Street"])
+    expect(card.journeys).toContain(["Kings X", "Liverpool Street"])
   })
 })

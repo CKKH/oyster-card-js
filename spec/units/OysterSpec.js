@@ -19,4 +19,12 @@ describe('Oyster', () => {
       expect(oyster.balance).toEqual(9)
     })
   })
+
+  describe('#tapOut()', () => {
+    it('records exit station to journeys', () => {
+      oyster.topUp(10)
+      oyster.tapOut('Liverpool Street')
+      expect(oyster.journeys).toContain('Liverpool Street')
+    })
+  })
 })

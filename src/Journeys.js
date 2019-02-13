@@ -1,2 +1,3 @@
 function Journeys() {
+  this.history = []
 }
